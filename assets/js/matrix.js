@@ -12,13 +12,13 @@ function matrix()
 	//converting the string into an array of single characters
 	chinese = chinese.split("");
 
-	var font_size = 10;
+	var font_size = 12;
 	var columns = c.width/font_size; //number of columns for the rain
 	//an array of drops - one per column
 	var drops = [];
 	//x below is the x coordinate
 	//1 = y co-ordinate of the drop(same for every drop initially)
-	for(var x = 0; x < columns; x++)
+	for(var x = 1; x < columns; x++)
 	drops[x] = 1;
 
 	//drawing the characters
@@ -48,9 +48,5 @@ function matrix()
 			drops[i]++;
 		}
 	}
-	setInterval(draw, 33);
+	setInterval(draw, 30);
 }
-function popup(){
-	window.open('mail.html','M\'envoyer un mail', 'width= 100px', height='100px')
-
-	}

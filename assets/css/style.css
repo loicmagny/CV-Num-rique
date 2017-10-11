@@ -1,11 +1,13 @@
 html {
 	background: black;
 	min-height: 100%;
-	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	color: #FFF;
 }
-
+*{
+	font-family: monospace;
+	font-size: 20px;
+}
 body, html {
 	height: 100%;
 	margin: 0;
@@ -17,9 +19,9 @@ a {
 	text-decoration: none;
 }
 
-	a:hover, li:hover > a {
-		color: #FFF;
-	}
+a:hover, li:hover > a {
+	color: #FFF;
+}
 
 ul {
 	list-style-type: none;
@@ -32,11 +34,97 @@ li {
 	padding: 10%;
 }
 #identity , #contact{
-	margin: auto;
+	bottom: -20px;
 	text-align: center;
 	position: relative;
 	font-family: monospace;
 	font-size: 20px;
+}
+#progresslinux{
+	float: right;
+	position: relative;
+	margin: -10px 41%;
+}
+#progresshtml , #progresscss{
+	position: relative;
+	float: left;
+}
+#progresshtml{
+	margin: 10px 30%;
+	display: inline;
+}
+#progressgit{
+	float:right;
+	margin: 25px 41%;
+	position:relative;
+}
+#progressphp , #progressapache{
+	position: relative;
+	float: right;
+}
+#progressphp{
+	margin: 25px 41% 0 0;
+	display: inline;
+}
+#progressapache{
+	margin: 25px 13rem 0 0;
+	display: inline;
+}
+#progressjs{
+	float: right;
+	position: relative;
+	margin: 100px 41%;
+}
+#progresscertif{
+	float: right;
+	position: relative;
+	margin: 0 41%;
+}
+#degrees , #pro , #personalway{
+	position: relative;
+	font-family: monospace;
+	font-size: 20px;
+}
+#degrees{
+	float: right;
+	margin: 0 25%;
+	width: 700px;
+}
+#pro{
+	float: right;
+	margin: 5% 25%;
+	width: 700px
+}
+#personalway{
+	float: right;
+	margin: 0 25%;
+	width: 700px
+}
+#miscellaneous {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.misc{
+	width: 400px;
+}
+progress{
+	display: block;
+	width: 150px;
+	margin: 1em auto;
+	padding: 4px;
+	border: 0 none;
+	background: black;
+	border-radius: 10px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),
+	0px 1px 0px rgba(255,255,255,0.2)
+}
+progress::-moz-progress-bar {
+	background: blue;
+	border-radius: 12px;
+	box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4),
+	0 2px 5px 0px rgba(0,0,0,0.3);
 }
 #c{
 	display: block;
@@ -55,12 +143,6 @@ li {
 	margin-left: 1em;
 	position: absolute;
 }
-#degrees , #pro , #personalway{
-	position: relative;
-	text-align: center;
-	font-family: monospace;
-	font-size: 20px;
-}
 #menu li {
 	position: relative;
 	z-index: 1;
@@ -72,38 +154,38 @@ li {
 	white-space: nowrap;
 }
 
-	#menu li ul {
-		position: absolute;
-		overflow: hidden;
-		display: none;
-		left: 100%;
-		top: 0.5em;
-		float: none;
-		background-image: -moz-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
-		background-image: -webkit-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
-		background-image: radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
-	}
+#menu li ul {
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	left: 100%;
+	top: 0.5em;
+	float: none;
+	background-image: -moz-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+	background-image: radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+}
 
-	#menu li:hover ul {
-		display: block;
-	}
+#menu li:hover ul {
+	display: block;
+}
 
-	#menu li ul a {
-		position: relative;
-		font-size: 0.8em;
-	}
+#menu li ul a {
+	position: relative;
+	font-size: 0.8em;
+}
 
-	#menu li ul a:hover:before {
-		content: "";
-		display: block;
-		width: 1em;
-		height: 1em;
-		background: rgba(0,0,0,0.75);
-		border: 1px solid #FFF;
-		position: absolute;
-		top: 0.5em;
-		left: -0.75em;
-		-moz-transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg);
-	}
+#menu li ul a:hover:before {
+	content: "";
+	display: block;
+	width: 1em;
+	height: 1em;
+	background: rgba(0,0,0,0.75);
+	border: 1px solid #FFF;
+	position: absolute;
+	top: 0.5em;
+	left: -0.75em;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
