@@ -8,7 +8,7 @@ function matrix()
 	c.width = window.innerWidth;
 
 	//chinese characters - taken from the unicode charset
-	var chinese = "abcdefghijklmnopqrstuvwxyz0123456789";
+	var chinese = "abcdefghijklmnopqrstuvwxyz";
 	//converting the string into an array of single characters
 	chinese = chinese.split("");
 
