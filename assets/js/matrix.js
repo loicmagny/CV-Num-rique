@@ -8,11 +8,11 @@ function matrix()
 	c.width = window.innerWidth;
 
 	//chinese characters - taken from the unicode charset
-	var chinese = "abcdefghijklmnopqrstuvwxyz";
+	var chinese = "abcdefghijklmnopqrstuvwxyz&é";
 	//converting the string into an array of single characters
 	chinese = chinese.split("");
 
-	var font_size = 12;
+	var font_size = 14;
 	var columns = c.width/font_size; //number of columns for the rain
 	//an array of drops - one per column
 	var drops = [];
